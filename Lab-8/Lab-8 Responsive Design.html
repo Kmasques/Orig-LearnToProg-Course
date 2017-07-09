@@ -2,7 +2,8 @@
 
 <html>
      <head>
-         <title>Creative Page Layouts</title>
+         <title>Responsive Design</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1";
     </head>
     <style>
         #footer, #header
@@ -43,6 +44,13 @@
             width: 100%;
             Clear: both;
         }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+        {
+            #secondary img  
+            {
+            display: none;
+            }
+        }
          </style>
     
     
@@ -50,7 +58,8 @@
         <div id="container">
         <div id="header">
             <h1>News About Nothing</h1>
-            <h2>All the Nothing News That's Fit to Post</h2></div>
+            <h2>All the Nothing News That's Fit to Post</h2>
+        </div>
             <!--header -->
             
             <div id="primary">
@@ -60,7 +69,7 @@
                 <p>Fusce convallis sollicitudin finibus. Integer ac ipsum tincidunt, malesuada urna consequat, scelerisque augue. Etiam et eleifend metus. Vestibulum quam elit, ullamcorper ut mi imperdiet, vehicula euismod sem. Quisque consequat pellentesque lorem eu elementum. Sed molestie risus ut turpis porttitor, ut faucibus lacus ornare. Etiam quis dolor volutpat, porta libero sed, dignissim felis. Mauris blandit eu ex ac posuere.</p>
                 
                 <p>Sed vel turpis efficitur, vulputate dui ac, consectetur sem. Proin ornare ullamcorper ornare. Aliquam a turpis tortor. Aenean nisl nibh, semper ut consectetur ac, feugiat ut quam. Sed eu dolor felis. Cras et ligula sodales, vehicula mauris imperdiet, tempus elit. Vivamus id neque consequat, lacinia tortor in, dapibus magna. Sed commodo orci id nisl scelerisque, quis varius nisl efficitur. Maecenas pretium lobortis dictum. Aliquam nunc ante, gravida tempus risus venenatis, imperdiet pellentesque ex.</p>
-                </div><br/>
+                </div>
                 <!--primary -->
             
                 <div id="secondary">
@@ -87,7 +96,7 @@
                         <!--moreSecondary-->
             
                             <div id="footer">
-                                <p>Copyright &copy;2015 | LearnToProgram Media</p><br/>
+                                <p>Copyright &copy;2015 | LearnToProgram Media</p>
                             </div>
                             <!--footer -->
                             </div>
