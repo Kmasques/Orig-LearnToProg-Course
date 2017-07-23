@@ -1,19 +1,34 @@
-def celciusToFahrenheit(celciusTemperature):
+def celsiusToFahrenheit(celsiusTemperature):
     fahrenheit = celsiusTemperature * (9.0/5.0) + 32.0
     return fahrenheit
 
-def fahrenheitToCelcius (fahrenheitTemperature):
+def fahrenheitToCelsius (fahrenheitTemperature):
     celsius = (fahrenheitTemperature - 32.0) * (5.0/9.0)
-    return celcius
+    return celsius
 
 def showMenu():
-    print "A: Convert celcius to fahrenheit"
-    print "B: Convert fahrenheit to celcius"
+    print "A: Convert celsius to fahrenheit"
+    print "B: Convert fahrenheit to celsius"
     print "X: Exit"
 
 showMenu()
-option = raw_input("option: ")
+option = raw_input("Option: ")
 while option !="X":
-    if option = "A":
-    value = input("Temperature to convert: ")
-        print (celciusToFahrenheit(float(value)))
+    if option == "A":
+        Temp = input("Temperature to convert: ")
+        print(celsiusToFahrenheit(float(Temp)))
+    if option == "B":
+        Temp = input("Temperature to convert: ")
+        print(fahrenheitToCelsius(float(Temp)))
+
+    else:
+        print "Please choose another option"
+        
+    showMenu()
+    option = raw_input("Option: ")
+
+
+
+
+
+
