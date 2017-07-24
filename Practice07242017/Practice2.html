@@ -3,6 +3,12 @@
     <head>
     <title>Screen Image</title>
         <style>
+            h3 {
+                font-family: Times, serif;
+                font-size: 1em;
+                font-weight: Bold;
+                }   
+
             .label{
                 font-family: Times, serif;
                 font-size: 2em;
@@ -12,19 +18,18 @@
                 border: 1px solid black;
                 padding: 2px;
                 background color: aliceblue;
-                width: 35px;
+                width: 35px;}
             .input, user-select: text{
                 font-family: times, serif;
                 font-size: 1em;
                 background color: black                    
                 }
-            }
-        
         </style>
     </head>
+
     <body>
         <form method = "post"  action = "/process.php">
-        <label for "Bill"></label>
+        <label for = "Bill">Bill</label><br/>
         <input type = "text" id = "Bill" Bill = "Bill" />
         </form>
     
