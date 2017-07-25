@@ -3,12 +3,12 @@
     <head>
     <title>Screen Image</title>
         <style>
-            h3 {
+            <meta name="viewport" content="width=device-width, initial-scale=1";
+            h4 {
                 font-family: Times, serif;
                 font-size: 1em;
                 font-weight: Bold;
                 }   
-
             .label{
                 font-family: Times, serif;
                 font-size: 2em;
@@ -19,10 +19,23 @@
                 padding: 2px;
                 background color: aliceblue;
                 width: 35px;}
-            .input, user-select: text{
+            .input, user-select: text
+                {
                 font-family: times, serif;
                 font-size: 1em;
                 background color: black                    
+                }
+            button {
+                font-family: Times, serif;
+                font-size: 1em;
+                font-weight: bold;
+                width: 180px;
+            }
+            .percentageinput {
+            border: 1px inset #ccc;
+            }
+            .percentageinput {
+            border: 0;
                 }
         </style>
     </head>
@@ -31,8 +44,17 @@
         <form method = "post"  action = "/process.php">
         <label for = "Bill">Bill</label><br/>
         <input type = "text" id = "Bill" Bill = "Bill" />
-        </form>
-    
+        </form><br/>
+        
+        <form method = "post"  action = "/process.php">
+        <label for = "Tip %">Tip %</label><br/>
+        <input type = "number" id = "Tip" Tip = "Tip" min = "0" max = "20" step="0.1" />
+        </form><br/>  
+        
+    <h4>Tip Amount:</h4>
+    <h4>Amount Owed:</h4><br/>
+        <button id:"Calculate Tip">Calculate Tip</button>
+        
     
     
     </body>
