@@ -14,11 +14,6 @@
                 font-size: 2em;
                 font-weight: Bold;
                 }
-            .form {
-                border: 1px solid black;
-                padding: 2px;
-                background color: aliceblue;
-                width: 35px;}
             .input, user-select: text
                 {
                 font-family: times, serif;
@@ -36,20 +31,26 @@
     </head>
 
     <body>
-        <form method = "post"  action = "/process.php">
+
+        <table>
+            
         <label for = "Bill">Bill</label><br/>
-        <input type = "text" id = "Bill" Bill = "Bill" />
-        </form><br/>
+        <input type = "text" id = "Bill" Bill = "Bill" /><br/><br/>
+
         
-        <form method = "post"  action = "/process.php">
         <label for = "Tip %">Tip %</label><br/>
-        <input type = "number" id = "Tip" Tip = "Tip" min = "0" max = "20" step="0.1" />
-        </form><br/>  
-        
+        <select id = "Tip" name = "Tip" width: 185px />
+            <option value = "10%">10%</option>
+            <option value = "12.5%">12.5%</option>
+            <option value = "15%">15%</option>
+            <option value = "17.5%">17.5%</option>
+            <option value = "20%">20%</option>  
+        </select>
+    
     <h4>Tip Amount:</h4>
     <h4>Amount Owed:</h4><br/>
-        <button id:"Calculate Tip">Calculate Tip</button>
-        
+    <button id:"Calculate Tip">Calculate Tip</button>
+
     
     
     </body>
