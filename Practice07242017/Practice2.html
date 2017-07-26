@@ -3,52 +3,76 @@
     <head>
     <title>Screen Image</title>
         <style>
-            <meta name="viewport" content="width=device-width, initial-scale=1";
-            h4 {
-                font-family: Times, serif;
-                font-size: 1em;
-                font-weight: Bold;
-                }   
-            .label{
-                font-family: Times, serif;
-                font-size: 2em;
-                font-weight: Bold;
-                }
-            .input, user-select: text
+
+            table 
                 {
-                font-family: times, serif;
+                font-family: Arial, sans-serif;
                 font-size: 1em;
-                background color: black                    
+                border-collapse: collapse;
+                font-color: Black;
+                width: 180px;
                 }
-            button {
-                font-family: Times, serif;
+            option value
+                {
+                font-family: Arial, sans-serif;
+                font-size: 1.2em;
+                font-weight: bold;                
+                }
+            td
+                {
+                font-family: Arial, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+                }
+            input, user-select: text
+                {
+                font-family: Arial, sans-serif;
+                font-size: 1.2em;     
+                }
+            button 
+                {
+                font-family: Arial, sans-serif;
                 font-size: 1em;
                 font-weight: bold;
                 width: 180px;
-            }
+                }
 
         </style>
     </head>
 
     <body>
 
-        <table>
-            
-        <label for = "Bill">Bill</label><br/>
-        <input type = "text" id = "Bill" Bill = "Bill" /><br/><br/>
-
-        
-        <label for = "Tip %">Tip %</label><br/>
-        <select id = "Tip" name = "Tip" width: 185px />
+    <table>
+        <tr>
+        <td>Bill</td>
+        </tr>
+        <tr>
+        <td><input type = "text" id = "Bill" Bill = "Bill" /></td>
+        </tr>
+        <tr>
+        <td>Tip %</td>
+        </tr>
+        <tr>
+        <td>
+        <select id = "Tip" name = "Tip" />
             <option value = "10%">10%</option>
             <option value = "12.5%">12.5%</option>
             <option value = "15%">15%</option>
             <option value = "17.5%">17.5%</option>
             <option value = "20%">20%</option>  
         </select>
-    
-    <h4>Tip Amount:</h4>
-    <h4>Amount Owed:</h4><br/>
+        </td>
+        </tr>
+        <tr>
+        <td>Tip Amount:</td>
+        </tr>
+        <tr>
+        <td>Amount Owed:</td>
+        </tr>
+        
+        
+    </table>
+        
     <button id:"Calculate Tip">Calculate Tip</button>
 
     
